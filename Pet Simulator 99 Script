@@ -1,0 +1,66 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("Pet Simulator 99 Script", "LightTheme")
+
+---Main
+local Tab = Window:NewTab("Main")
+local Section = Tab:NewSection("Script Made By HachiyaLuki")
+local Section = Tab:NewSection("Make Sure To Like And Subscribe For More Script")
+local Section = Tab:NewSection("Help Me Reach 100 Subscriber")
+
+local Tab = Window:NewTab("Fast Hatch")
+local Section = Tab:NewSection("Fast Hatch")
+Section:NewToggle("Fast Hatch 3x egg🥚", "Hatching Will Be Fast", function(state)
+    if state then
+        print("Toggle On")
+    else
+        print("Toggle Off")
+    end
+end)
+Section:NewToggle("Fast Hatch 8x egg🥚", "Fast Hatch", function(state)
+    if state then
+        print("Toggle On")
+    else
+        print("Toggle Off")
+    end
+end)
+
+---Dupe Huge
+local Tab = Window:NewTab("Dupe Huge")
+local Section = Tab:NewSection("Dupe Huge")
+Section:NewTextBox("Type Huge", "Any Huge Will Be Dupe", function(txt)
+	print(txt)
+end)
+local Section = Tab:NewSection("Fps Unlocker🔒")
+Section:NewToggle("Fps Unlock", "ToggleInfo", function(state)
+    if state then
+        print("Toggle On")
+    else
+        print("Toggle Off")
+    end
+end)
+
+---Pet Spawner
+local Tab = Window:NewTab("Pet Spawner")
+local Section = Tab:NewSection("🔥Pet Spawner🔥")
+Section:NewTextBox("Type Pet To Spawn", "Spawn Any Pet", function(txt)
+	print(txt)
+end)
+local Section = Tab:NewSection("Fps Unlocker🔒")
+Section:NewToggle("Fps Unlock", "Fps Unlock", function(state)
+    if state then
+        print("Toggle On")
+    else
+        print("Toggle Off")
+    end
+end)
+
+---Gems Dupe
+local Tab = Window:NewTab("Gems Dupe💎")
+local Section = Tab:NewSection("Dupe Gems💎")
+Section:NewTextBox("Amount Of Gems To Dupe", "Duplicate Gems", function(txt)
+	print(txt)
+end)
+local Section = Tab:NewSection("Fps Unlocker 🔒")
+Section:NewButton("Fps Unlock 🔥", "ButtonInfo", function()
+    print("Clicked")
+end)
